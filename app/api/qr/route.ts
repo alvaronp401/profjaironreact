@@ -25,7 +25,7 @@ export async function GET() {
       },
     });
 
-    return new NextResponse(qrCodeBuffer, {
+    return new Response(qrCodeBuffer, {
       headers: {
         "Content-Type": "image/png",
         "Cache-Control": "public, max-age=3600",
